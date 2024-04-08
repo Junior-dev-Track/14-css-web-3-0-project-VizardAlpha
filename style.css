@@ -2,7 +2,7 @@
 
 /* Reset CSS */
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -147,6 +147,12 @@ header, main, section {
     width: 100%;
 }
 
+p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 html{
     font-family: 'Inter', sans-serif;
     color: #C5C6CE;
@@ -234,12 +240,7 @@ main > section{
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-}
-
-#desc-main p{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 26px;
+    color: #5E607A;
 }
 
 #read-more {
@@ -261,10 +262,6 @@ main > section{
     display: flex;
     flex-direction: column;
 
-    article {
-        padding: 25px 0px;
-    }
-
     h2 {
         color: #E9AA52;
         font-size: 40px;
@@ -279,13 +276,6 @@ main > section{
         font-weight: 800;
         line-height: 24px;
         padding: 10px 0px;
-        
-    }
-
-    p {
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 26px;
         
     }
 
@@ -310,7 +300,8 @@ main > section{
     .color-list{
         display: flex;
         flex-direction: column;
-        justify-content: space-between
+        justify-content: space-between;
+        color: #5E607A;
     }
     
     .color-list p:first-child{
@@ -324,12 +315,6 @@ main > section{
         font-size: 18px;
         font-weight: 800;
         line-height: 24px;
-    }
-    
-    .color-list p{
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 26px;
     }
 
 }
