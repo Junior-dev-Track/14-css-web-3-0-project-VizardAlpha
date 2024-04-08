@@ -162,6 +162,7 @@ header {
     padding: 20px 0;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -290,6 +291,8 @@ main > section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     .article-list{
         display: grid;
@@ -343,6 +346,28 @@ main > section{
 
     main {
         grid-template-columns: 1fr;
+    }
+
+    #title-main{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+
+    #desc-main{
+        margin-bottom: 55px;
+
+        p{
+            margin-bottom: 25px;
+        }
+    }
+
+    .news{
+
+        h2{
+            font-size: 32px;
+            line-height: 32px;
+        }
     }
 
     main > section{
