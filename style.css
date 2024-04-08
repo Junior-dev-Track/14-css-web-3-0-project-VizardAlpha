@@ -3,7 +3,8 @@
 /* Reset CSS */
 
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -95,7 +96,6 @@ video {
     font: inherit;
     vertical-align: baseline;
     text-decoration-line: none;
-    color: white;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -143,8 +143,13 @@ table {
 
 /* Custom CSS */
 
+header, main, section {
+    width: 100%;
+}
+
 html{
     font-family: 'Inter', sans-serif;
+    color: #C5C6CE;
 }
 
 header {
@@ -154,6 +159,7 @@ header {
     padding: 20px 0;
     margin: 0 auto;
     margin-top: 30px;
+    width: 100%;
 }
 
 ul {
@@ -173,9 +179,27 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 66% 31.5%;
+    gap: 0px 2.5%;
+}
+
+main > section{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 #logo-nav {
     width: 64.09px;
@@ -183,78 +207,59 @@ img {
 }
 
 #image-main {
-    max-width: 730px;
-    grid-area: images-main;
+    grid-column: span 2;
 }
 
 .container {
     max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 16px;
 }
 
-.grid-main {
-    display: grid;
-    grid-template-columns: 66% 31.5%;
-    gap: 0px 2.5%;
-    grid-template-areas:
-        "images-main news"
-        "hero news";
+.picture-main{
+    width: 100%;
 }
 
-.hero {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px;
-    grid-template-areas:
-        "title-main desc-main";
-    grid-area: hero;
-
-    #title-main {
-        grid-area: title-main;
-    }
-
-    #desc-main {
-        grid-area: desc-main;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    h1 {
-        color: #00001A;
-        font-size: 56px;
-        font-weight: 800;
-        line-height: 56px;
-        
-    }
-
-    p {
-        color: #C5C6CE;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 26px;
-        
-    }
-
-    #read-more {
-        background-color: #F15D51;
-        color: #FFFDFA;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 4.375px;
-        padding: 15px 25px;
-    }
-
+#title-main{
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 56px;
+    color: #00001A;
 }
+
+#desc-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#desc-main p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#read-more {
+    background-color: #F15D51;
+    color: #FFFDFA;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 4.375px;
+    padding: 15px 25px;
+}
+
+
 
 .news {
     background-color: #00001A;
-    padding: 30px;
-    grid-area: news;
-    max-width: 350px;
+    padding: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
 
     article {
         padding: 25px 0px;
@@ -278,7 +283,6 @@ img {
     }
 
     p {
-        color: #C5C6CE;
         font-size: 15px;
         font-weight: 400;
         line-height: 26px;
@@ -287,6 +291,7 @@ img {
 
     hr {
         border: solid #5E607A 1px;
+        width: 100%;
     }
 
 }
@@ -295,38 +300,36 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
-}
 
-.article-list{
-    display: grid;
-    grid-template-columns: 30% 1fr;
-    gap:16px;
-}
+    .article-list{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        gap:16px;
+    }
+    
+    .color-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    
+    .color-list p:first-child{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    
+    .color-list h2{
+        color:#00001A;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+    }
+    
+    .color-list p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+    }
 
-.color-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
 }
-
-.color-list p:first-child{
-    color: #C5C6CE;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.color-list h2{
-    color:#00001A;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 24px;
-}
-
-.color-list p{
-    color:#C5C6CE;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 26px;
-}
-

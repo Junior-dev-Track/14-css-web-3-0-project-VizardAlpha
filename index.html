@@ -10,36 +10,34 @@
 </head>
 
 <body>
-    <header class="container ">
-        <img id="logo-nav" src="./assets/W..svg" alt="Logo W">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Trending</a></li>
-                <li><a href="#">Categories</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container ">
-        <div class="grid-main">
-            <picture id="image-main">
-                <source srcset="./assets/vasilis-small.jpg" media="(max-width: 400px)">
-                <source srcset="./assets/vasilis.jpg">
-                <img src="./assets/vasilis.jpg" alt="Vasilis picture">
-            </picture>
-            <div class="hero">
-                <div id="title-main">
-                    <h1>The Bright Future of Web 3.0?</h1>
-                </div>
-                <div id="desc-main">
-                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back
-                        into the hands of the people. But is it really fulfilling its promise?
-                    </p>
-                    <a id="read-more" href="#">Read more</a>
-                </div>
-            </div>
+    <div class="container">
+        <header>
+            <img id="logo-nav" src="./assets/W..svg" alt="Logo W">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <picture id="image-main">
+                    <source srcset="./assets/vasilis-small.jpg" media="(max-width: 400px)">
+                    <source srcset="./assets/vasilis.jpg">
+                    <img class="picture-main" src="./assets/vasilis.jpg" alt="Vasilis picture">
+                </picture>
+                    <h1 id="title-main">The Bright Future of Web 3.0?</h1>
+                    <div id="desc-main">
+                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back
+                            into the hands of the people. But is it really fulfilling its promise?
+                        </p>
+                        <a id="read-more" href="#">Read more</a>
+                    </div>
+            </section>
             <aside class="news">
                 <h2>New</h2>
                 <article>
@@ -57,33 +55,33 @@
                     <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                 </article>
             </aside>
-        </div>
-    </main>
-    <section class="container list">
-        <article class="article-list">
-            <img src="./assets/Ordi.jpg" alt="">
-            <div class="color-list">
-                <p>01</p>
-                <h2>Reviving Retro PCs</h2>
-                <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
-        </article>
-        <article class="article-list">
-            <img src="./assets/Clavier.jpg" alt="">
-            <div class="color-list">
-                <p>02</p>
-                <h2>Top 10 Laptops of 2022</h2>
-                <p>Our best picks for various needs and budgets.</p>
-            </div>
-        </article>
-        <article class="article-list">
-            <img src="./assets/Manette.jpg" alt="">
-            <div class="color-list">
-                <p>03</p>
-                <h2>The Growth of Gaming</h2>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-        </article>
-    </section>
+        </main>
+        <section class="list">
+            <article class="article-list">
+                <img src="./assets/Ordi.jpg" alt="Small old computer images">
+                <div class="color-list">
+                    <p>01</p>
+                    <h2>Reviving Retro PCs</h2>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </article>
+            <article class="article-list">
+                <img src="./assets/Clavier.jpg" alt="Images of keyboard">
+                <div class="color-list">
+                    <p>02</p>
+                    <h2>Top 10 Laptops of 2022</h2>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </article>
+            <article class="article-list">
+                <img src="./assets/Manette.jpg" alt="Hand and joystick">
+                <div class="color-list">
+                    <p>03</p>
+                    <h2>The Growth of Gaming</h2>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </article>
+        </section>
+    </div>
 </body>
 </html>
