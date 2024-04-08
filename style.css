@@ -203,6 +203,9 @@ main > section{
     grid-template-columns: 1fr 1fr;
 }
 
+#hamburger{
+    display: none
+}
 
 #logo-nav {
     width: 64.09px;
@@ -320,7 +323,7 @@ main > section{
 
 /* Responsive */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 650px) {
 
     .container {
         max-width: 375px;
@@ -330,18 +333,28 @@ main > section{
         margin: 16px;
     }
 
+    #hamburger{
+        display: block;
+    }
+
     nav{
         display: none;
     }
 
     main {
-        display: grid;
         grid-template-columns: 1fr;
+    }
+
+    main > section{
+        grid-template-columns: none;
+    }
+
+    #image-main{
+        grid-column: unset;
     }
 
     
     .list{
-        display: grid;
         grid-template-columns: 1fr;
         gap: 34px;
     }
