@@ -143,9 +143,6 @@ table {
 
 /* Custom CSS */
 
-header, main, section {
-    width: 100%;
-}
 
 p{
     font-size: 15px;
@@ -305,6 +302,7 @@ main > section{
     }
     
     .color-list p:first-child{
+        color: #C5C6CE;
         font-size: 32px;
         font-weight: 700;
         line-height: 32px;
@@ -317,4 +315,35 @@ main > section{
         line-height: 24px;
     }
 
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 375px) {
+
+    .container {
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin: 16px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+    .list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+    
 }
