@@ -5,7 +5,6 @@
 * {
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -144,6 +143,9 @@ table {
 
 /* Custom CSS */
 
+html{
+    font-family: 'Inter', sans-serif;
+}
 
 header {
     display: flex;
@@ -167,7 +169,7 @@ a {
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    text-align: left;
+    
 }
 
 img {
@@ -182,7 +184,7 @@ img {
 
 #image-main {
     max-width: 730px;
-    grid-area: images;
+    grid-area: images-main;
 }
 
 .container {
@@ -192,10 +194,9 @@ img {
 .grid-main {
     display: grid;
     grid-template-columns: 66% 31.5%;
-    grid-template-rows: 1fr 1fr;
     gap: 0px 2.5%;
     grid-template-areas:
-        "images news"
+        "images-main news"
         "hero news";
 }
 
@@ -204,7 +205,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 30px;
     grid-template-areas:
         "title-main desc-main";
     grid-area: hero;
@@ -222,7 +223,7 @@ img {
         font-size: 56px;
         font-weight: 800;
         line-height: 56px;
-        text-align: left;
+        
     }
 
     p {
@@ -230,7 +231,7 @@ img {
         font-size: 15px;
         font-weight: 400;
         line-height: 26px;
-        text-align: left;
+        
     }
 
     #read-more {
@@ -240,7 +241,6 @@ img {
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 4.375px;
-        text-align: left;
         padding: 15px 25px;
     }
 
@@ -261,7 +261,7 @@ img {
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
-        text-align: left;
+        
     }
 
     h1 {
@@ -270,7 +270,7 @@ img {
         font-weight: 800;
         line-height: 24px;
         padding: 10px 0px;
-        text-align: left;
+        
     }
 
     p {
@@ -278,7 +278,7 @@ img {
         font-size: 15px;
         font-weight: 400;
         line-height: 26px;
-        text-align: left;
+        
     }
 
     hr {
@@ -291,3 +291,38 @@ img {
     height: 127px;
     width: 190.5px;
 }
+
+.list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.article-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.color-list p:first-child{
+    color: #C5C6CE;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.color-list h1{
+    color:#00001A;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.color-list p{
+    color:#C5C6CE;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
