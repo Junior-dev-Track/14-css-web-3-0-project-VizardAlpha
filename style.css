@@ -216,6 +216,10 @@ img {
 
     #desc-main {
         grid-area: desc-main;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     h1 {
@@ -264,7 +268,7 @@ img {
         
     }
 
-    h1 {
+    h3 {
         color: #FFFDFA;
         font-size: 20px;
         font-weight: 800;
@@ -287,22 +291,22 @@ img {
 
 }
 
-.section-image {
-    height: 127px;
-    width: 190.5px;
-}
-
 .list{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
 }
 
 .article-list{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap:16px;
+}
+
+.color-list{
     display: flex;
-    align-items: center;
-    gap: 20px;
-    flex: 1;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 .color-list p:first-child{
@@ -312,7 +316,7 @@ img {
     line-height: 32px;
 }
 
-.color-list h1{
+.color-list h2{
     color:#00001A;
     font-size: 18px;
     font-weight: 800;
